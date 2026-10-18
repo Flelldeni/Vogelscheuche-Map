@@ -2,7 +2,7 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 import { SUPABASE_URL, SUPABASE_ANON_KEY } from './config.js';
 const $=id=>document.getElementById(id), configured=SUPABASE_URL.startsWith('https://') && !SUPABASE_ANON_KEY.startsWith('DEIN_');
 const db=configured?createClient(SUPABASE_URL,SUPABASE_ANON_KEY):null;
-const imageWidth=4866,imageHeight=3250;
+const imageWidth=5051,imageHeight=3335;
 const map=L.map('map',{crs:L.CRS.Simple,minZoom:-3,maxZoom:5,zoomSnap:0.25,zoomDelta:0.5,attributionControl:false});
 const bounds=[[0,0],[imageHeight,imageWidth]];
 L.imageOverlay('./gesamtkarte.webp',bounds).addTo(map);
