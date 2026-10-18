@@ -17,8 +17,8 @@ const markerColors = {
   orange: '#ef8530'
 };
 
-function coloredIcon(color) {
-  const fill = markerColors[color] || markerColors.red;
+function coloredIcon(color)
+{const fill = markerColors[color] || markerColors.red;
   return L.divIcon({
     className: 'colored-marker',
     html: `<svg width="30" height="42" viewBox="0 0 30 42" xmlns="http://www.w3.org/2000/svg">
